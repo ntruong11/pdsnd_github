@@ -162,7 +162,7 @@ def user_stats(df):
 
     # TO DO: Display earliest, most recent, and most common year of birth
     if ('Birth Year' not in df):
-        print('Sorry! Birth year data unavailable for Washington')
+        print('Sorry this birth year data is unavailable for Washington!')
     else:
         print('The Earliest birth year is: {}'.format(int(df['Birth Year'].min())))
         print('The most recent birth year is: {}'.format(int(df['Birth Year'].max())))
