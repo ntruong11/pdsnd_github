@@ -10,7 +10,7 @@ Udacity Final Project
 In this project, I'll be simulating a realistic workflow to refactor my previous BikeShare project using Git.
 
 ### Files used
-Include the files used
+bikeshare.py, data files, and .gitignore
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
