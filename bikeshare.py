@@ -29,7 +29,7 @@ def get_filters():
 
     # TO DO: get user input for month (all, january, february, ... , june)
     while True: 
-        month = str(input('Enter any one of the first 6 months or enter All to select all 6 months\n')).title()
+        month = str(input('Please enter one of the first 6 months or enter All if you want to select all 6 months.\n')).title()
         if month not in months:
             print('This is invalid.  Please retry. ')
         else:
@@ -38,7 +38,7 @@ def get_filters():
 
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
     while True:
-        day = str(input('Please enter a day that you want to filter out.  If not, type in all\n')).title()
+        day = str(input('Please enter a day of the week that you want to filter out.  If not, enter ALL.\n')).title()
         if day not in days:
             print('Please enter a valid day')
         else:
@@ -162,7 +162,7 @@ def user_stats(df):
 
     # TO DO: Display earliest, most recent, and most common year of birth
     if ('Birth Year' not in df):
-        print('Sorry! Birth year data unavailable for Washington')
+        print('Sorry this birth year data is unavailable for Washington!')
     else:
         print('The Earliest birth year is: {}'.format(int(df['Birth Year'].min())))
         print('The most recent birth year is: {}'.format(int(df['Birth Year'].max())))
